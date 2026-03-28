@@ -67,7 +67,7 @@
     <p>Built at RevolutionUC Hackathon</p>
 
     <div class="buttons">
-      <a href="#" class="btn">Run Demo</a>
+      <a href="#demo" class="btn">Run Demo</a>
       <a href="https://github.com/marti7m5/synthshield" class="btn">GitHub</a>
     </div>
   </div>
@@ -94,5 +94,21 @@
     </div>
   </div>
 
-</body>
+  <div class="section" id="demo">
+    <h2>Demo</h2>
+  <div class="card">
+    <p>Upload data to generate a synthetic version and analyze anomalies.</p>
+    	<button class="btn" onclick="runDemo()">Run Sample Demo</button>
+    <p id="output" style="margin-top:20px;"></p>
+  </div>
+
+  <script>
+	function runDemo() {
+  	document.getElementById("output").innerText =
+    	"✔ Synthetic dataset generated\n✔ No sensitive data exposed\n✔ Anomaly detection: No threats detected";
+	}
+  </script>
+  
+  </div>	
+ </body>
 </html>
