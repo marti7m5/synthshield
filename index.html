@@ -88,6 +88,7 @@
   <div class="container">
     <h1>SynthShield</h1>
     <p>Synthetic Data Defense for Security & Surveillance AI</p>
+    <p style="color:#22c55e;">✔ Privacy-preserving AI pipeline for sensitive data</p>
     <p>Built at RevolutionUC Hackathon</p>
 
     <div class="buttons">
@@ -128,11 +129,11 @@
   </div>
 
   <script>
-    function runDemo() {
-      document.getElementById("output").innerText =
-        "✔ Synthetic dataset generated\n⚠️ Sensitive data detected: Email, Phone\n✔ Data sanitized successfully";
-    }
-  </script>
+  function runDemo() {
+  document.getElementById("output").innerText =
+    "✔ Synthetic dataset generated\n⚠️ PII detected: Email, Phone\n✔ Sensitive fields sanitized\n✔ Safe dataset ready for model training";
+  }
+  </script>  
 
 </body>
 </html>
