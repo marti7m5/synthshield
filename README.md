@@ -1,3 +1,5 @@
+🔗 Live Demo: https://synthshield.tech
+
 # SynthShield
 
 Synthetic Data Defense for Security & Surveillance AI
