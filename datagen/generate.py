@@ -33,13 +33,17 @@ for i in range(20):
     for j in range(random.randint(3, 8)):
         x = random.uniform(-5, 5)
         y = random.uniform(-5, 5)
+        scale_x = random.uniform(0.6, 1.8)
+        scale_y = random.uniform(0.6, 1.8)
+        scale_z = random.uniform(0.6, 1.8)
 
         bpy.ops.mesh.primitive_cube_add(location=(x, y, 0.5))
         obj = bpy.context.object
         obj.rotation_mode = 'XYZ'
+        obj.scale = (scale_x, scale_y, scale_z)
         obj.rotation_euler = (
-            random.uniform(-0.2, 0.2),
-            random.uniform(-0.2, 0.2),
+            random.uniform(-0.5, 0.5),
+            random.uniform(-0.5, 0.5),
             random.uniform(0, 2 * math.pi)
         )
         cubes.append(obj)
