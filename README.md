@@ -1,23 +1,29 @@
+## 🚀 SynthShield
 
-## 🖥️ Demo
+Synthetic Data Defense for Security & Surveillance AI
 
-👉 https://synthshield.tech
+SynthShield is a synthetic data pipeline designed for privacy-safe computer vision training.
 
-Click the button to generate and view synthetic scenes with bounding box annotations.
-
----
-
-## 🚀 Overview
-
-SynthShield is a synthetic data pipeline that generates and automatically labels training data for computer vision systems without exposing sensitive real-world information.
+It generates realistic synthetic scenes, automatically applies bounding box annotations, and produces training-ready datasets without relying on sensitive real-world imagery.
 
 Built in 24 hours at RevolutionUC.
 
 ---
 
+## 🖥️ Live Demo
+
+👉 https://synthshield.tech
+
+Generate synthetic scenes and view:
+- Raw procedurally generated environments  
+- Automatically labeled outputs  
+- YOLO-style training-ready data  
+
+---
+
 ## 🧠 Problem
 
-Modern AI systems in security, surveillance, and healthcare require large amounts of labeled data. Using real data introduces:
+Modern AI systems in security, surveillance, and healthcare require large amounts of labeled data. Using real-world data introduces:
 
 - Privacy risks  
 - Regulatory challenges  
@@ -30,27 +36,27 @@ Modern AI systems in security, surveillance, and healthcare require large amount
 SynthShield replaces sensitive datasets with realistic synthetic data generated in controlled environments.
 
 The system produces:
-- Synthetic scenes
-- Automatic YOLO-style annotations
-- Visual validation of labeled outputs
+- Synthetic scenes  
+- Automatic YOLO-style annotations  
+- Visual validation of labeled outputs  
 
 This enables safe development, testing, and validation of AI systems.
 
 ---
 
-## ⚙️ Pipeline
+## 🔬 Pipeline
 
 1. **Scene Generation (Blender)**
-   - Randomized object placement
-   - Variable object counts per scene
+   - Randomized object placement  
+   - Variable object counts per scene  
 
 2. **Automatic Annotation**
-   - YOLO-format bounding boxes
-   - Generated directly from scene data
+   - YOLO-format bounding boxes  
+   - Generated directly from scene data  
 
 3. **Visualization**
-   - Side-by-side raw vs labeled output
-   - Interactive web demo
+   - Side-by-side raw vs labeled output  
+   - Interactive web demo  
 
 ---
 
@@ -61,6 +67,15 @@ This enables safe development, testing, and validation of AI systems.
 - Randomized synthetic environments  
 - Interactive demo with real outputs  
 - Scalable to large training datasets  
+
+---
+
+## 🧩 Use Cases
+
+- Surveillance system training without real footage  
+- Healthcare AI without patient data exposure  
+- Defense and security simulation environments  
+- Synthetic datasets for research and testing  
 
 ---
 
@@ -82,32 +97,23 @@ This enables safe development, testing, and validation of AI systems.
 
 ---
 
-## 🧩 Use Cases
+## 👤 Author
 
-- Surveillance system training without real footage  
-- Healthcare AI without patient data exposure  
-- Defense and security simulation environments  
-- Synthetic datasets for research and testing  
+**Michael Martina**  
+Cybersecurity @ University of Cincinnati  
 
 ---
 
-## 👤 Author
-
-Michael Martina  
-Cybersecurity @ University of Cincinnati
-
-## Project Structure
-```text
+## 📁 Project Structure
 synthshield/
 ├── README.md
 ├── index.html
 ├── scanner.py
 ├── datagen/
-│   ├── generate.py
-│   ├── annotations/
-│   │   └── .gitkeep
-│   ├── images/
-│   │   └── .gitkeep
-│   └── masks/
-│       └── .gitkeep
-```
+│ ├── generate.py
+│ ├── annotations/
+│ │ └── .gitkeep
+│ ├── images/
+│ │ └── .gitkeep
+│ └── masks/
+│ └── .gitkeep
