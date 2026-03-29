@@ -40,3 +40,17 @@ Coming soon (live demo deployed via synthshield.tech)
 - Privacy-preserving AI development
 
 ## Project Structure
+```text
+synthshield/
+├── README.md
+├── index.html
+├── scanner.py
+├── datagen/
+│   ├── generate.py
+│   ├── annotations/
+│   │   └── .gitkeep
+│   ├── images/
+│   │   └── .gitkeep
+│   └── masks/
+│       └── .gitkeep
+```
