@@ -37,11 +37,7 @@ for image_path in sorted(image_dir.glob("*.png")):
 
     out_path = preview_dir / image_path.name
 
-    # Create side-by-side image
-    original = Image.open(image_path).convert("RGB")
-    combined = Image.new("RGB", (w * 2, h))
-    combined.paste(original, (0, 0))
-    combined.paste(img, (w, 0))
-    combined.save(out_path)
+    # Save labeled image only
+    img.save(out_path)
 
 print("Preview images with boxes created in:", preview_dir)
