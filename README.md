@@ -21,6 +21,20 @@ Generate synthetic scenes and view:
 
 ---
 
+## 🎯 Alignment with Kinetic Vision Challenge
+
+This project directly addresses the core objectives:
+
+- ✅ Synthetic RGB scene generation using 3D environments
+- ✅ Automatic annotation generation (YOLO bounding boxes)
+- ✅ Scene randomization (object count, placement, variability)
+- ✅ Scalable pipeline for dataset generation
+
+Stretch Goals Progress:
+- ⚡ Bounding box annotations implemented
+- ⚡ Ready for integration with YOLO training pipelines
+- 🔜 Instance segmentation and mask generation (future work)
+
 ## 🧠 Problem
 
 Modern AI systems in security, surveillance, and healthcare require large amounts of labeled data. Using real-world data introduces:
@@ -120,17 +134,3 @@ synthshield/
 │   └── masks/
 │       └── .gitkeep
 ```
-
-## 🎯 Alignment with Kinetic Vision Challenge
-
-This project directly addresses the core objectives:
-
-- ✅ Synthetic RGB scene generation using 3D environments
-- ✅ Automatic annotation generation (YOLO bounding boxes)
-- ✅ Scene randomization (object count, placement, variability)
-- ✅ Scalable pipeline for dataset generation
-
-Stretch Goals Progress:
-- ⚡ Bounding box annotations implemented
-- ⚡ Ready for integration with YOLO training pipelines
-- 🔜 Instance segmentation and mask generation (future work)
