@@ -79,7 +79,7 @@ Each generated scene is unique, with different object positions, counts, and con
 3. Extract object metadata
 4. Convert to YOLO bounding box format
 5. Output:
-
+   
    * Image
    * Annotation file
 
