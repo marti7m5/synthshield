@@ -36,6 +36,12 @@ for image_path in sorted(image_dir.glob("*.png")):
             draw.rectangle([x1, y1, x2, y2], outline="red", width=3)
 
     out_path = preview_dir / image_path.name
-    img.save(out_path)
+
+    # Create side-by-side image
+    original = Image.open(image_path).convert("RGB")
+    combined = Image.new("RGB", (w * 2, h))
+    combined.paste(original, (0, 0))
+    combined.paste(img, (w, 0))
+    combined.save(out_path)
 
 print("Preview images with boxes created in:", preview_dir)
