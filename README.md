@@ -105,15 +105,18 @@ Cybersecurity @ University of Cincinnati
 ---
 
 ## 📁 Project Structure
+
+```bash
 synthshield/
 ├── README.md
 ├── index.html
 ├── scanner.py
 ├── datagen/
-│ ├── generate.py
-│ ├── annotations/
-│ │ └── .gitkeep
-│ ├── images/
-│ │ └── .gitkeep
-│ └── masks/
-│ └── .gitkeep
+│   ├── generate.py
+│   ├── annotations/
+│   │   └── .gitkeep
+│   ├── images/
+│   │   └── .gitkeep
+│   └── masks/
+│       └── .gitkeep
+```
