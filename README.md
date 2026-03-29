@@ -69,6 +69,7 @@ To improve model robustness, each scene includes:
 * Lighting changes
 * Background diversity
 
+Each generated scene is unique, with different object positions, counts, and configurations across runs.
 ---
 
 ## ⚙️ Pipeline
@@ -130,6 +131,7 @@ Applicable to:
 * Surveillance systems
 * Healthcare imaging
 * Defense and security AI
+
 
 ---
 
