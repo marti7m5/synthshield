@@ -25,7 +25,7 @@ bpy.ops.object.light_add(type='SUN', location=(5, 5, 10))
 bpy.ops.mesh.primitive_plane_add(size=15)
 
 # Generate multiple scenes
-for i in range(5):
+for i in range(20):
     cubes = []
     labels = []
 
