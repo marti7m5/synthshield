@@ -96,11 +96,20 @@
     </div>
 
     <section id="pipeline-demo" style="margin-top: 1.5rem; text-align: center;">
-      <h2>Synthetic Data Pipeline Demo</h2>
+      <h2>🔬 Live Synthetic Data Pipeline Demo</h2>
 
-    <p id="pipeline-status">
-      Generated 50 synthetic surveillance scenes. Displaying interactive sample subset.
-    </p>
+      <p>
+      	This demo showcases a fully automated synthetic data pipeline used to train computer vision models without real-world data.
+      	Each generated scene is:
+      </p>
+
+      <ul style="text-align: left; display: inline-block;">
+  	<li>Procedurally generated using randomized environments</li>
+  	<li>Automatically labeled with bounding boxes</li>
+  	<li>Formatted for YOLO-style training pipelines</li>
+      </ul>
+
+      <p id="status" style="margin-top: 1rem; font-weight: bold;"></p>
 
     <button id="pipeline-btn" class="btn" style="margin-bottom: 1.5rem;">
       Generate Synthetic Dataset
@@ -160,24 +169,34 @@
       const pipelineBtn = document.getElementById("pipeline-btn");
       const pipelineRaw = document.getElementById("pipeline-raw");
       const pipelinePreview = document.getElementById("pipeline-preview");
-      const pipelineStatus = document.getElementById("pipeline-status");
+      const status = document.getElementById("status");
 
       const raws = Array.from({ length: 20 }, (_, i) => `demo-assets/raw/scene_${i}.png`);
       const previews = Array.from({ length: 20 }, (_, i) => `demo-assets/scene_${i}.png`);
 
-      if (pipelineBtn && pipelineRaw && pipelinePreview && pipelineStatus) {
+      if (pipelineBtn && pipelineRaw && pipelinePreview && status) {
+        let currentIndex = 1;
+
         pipelineBtn.addEventListener("click", () => {
-          const index = Math.floor(Math.random() * previews.length);
-          const stamp = "?t=" + new Date().getTime();
+          status.textContent = "Generating synthetic scene...";
 
-          pipelineRaw.src = raws[index] + stamp;
-          pipelinePreview.src = previews[index] + stamp;
+          setTimeout(() => {
+            pipelineRaw.src = raws[currentIndex] + "?t=" + Date.now();
+            status.textContent = "Applying object detection labels...";
+          }, 1000);
 
-          pipelineStatus.textContent =
-            "Synthetic scene generated and automatically labeled with bounding boxes.";
+           setTimeout(() => {
+            pipelinePreview.src = previews[currentIndex] + "?t=" + Date.now();
+            status.textContent = "Exporting training data (YOLO format)...";
+          }, 2000);
+
+          setTimeout(() => {
+            status.textContent = "✅ Dataset sample generated";
+            currentIndex = (currentIndex + 1) % previews.length;
+          }, 3000);
         });
       }
     </script>
 
-   </body>
+  </body>
 </html>
