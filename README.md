@@ -43,7 +43,7 @@ Stretch Goals:
 
 | Raw Scene              | Annotated Output                   |
 | ---------------------- | ---------------------------------- |
-| ![Raw](images/raw.png) | ![Annotated](images/annotated.png) |
+| ![Raw](raw.png) |        ![Annotated](annotated.png) |
 
 ---
 
