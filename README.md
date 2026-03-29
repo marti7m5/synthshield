@@ -132,7 +132,6 @@ Applicable to:
 * Healthcare imaging
 * Defense and security AI
 
-
 ---
 
 ## 🚀 Future Work
