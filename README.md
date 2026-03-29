@@ -45,6 +45,7 @@ Stretch Goals:
 | ---------------------- | ---------------------------------- |
 | ![Raw](raw.png) |        ![Annotated](annotated.png) |
 
+These examples demonstrate the end-to-end pipeline: synthetic scene generation followed by automatic annotation without manual labeling.
 ---
 
 ## 📦 Data Generated Per Scene
