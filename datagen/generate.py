@@ -1,6 +1,7 @@
 import bpy
 import random
 import os
+import math
 
 # Clear scene
 bpy.ops.object.select_all(action='SELECT')
@@ -35,6 +36,12 @@ for i in range(20):
 
         bpy.ops.mesh.primitive_cube_add(location=(x, y, 0.5))
         obj = bpy.context.object
+        obj.rotation_mode = 'XYZ'
+        obj.rotation_euler = (
+            random.uniform(-0.2, 0.2),
+            random.uniform(-0.2, 0.2),
+            random.uniform(0, 2 * math.pi)
+        )
         cubes.append(obj)
 
         # Convert to YOLO-style normalized coordinates
