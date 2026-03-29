@@ -22,6 +22,33 @@ This enables safe, scalable development of AI systems in domains where real data
 
 ---
 
+🧰 Technical Stack
+
+Languages
+
+Python
+JavaScript
+HTML / CSS
+
+Frameworks & Libraries
+
+Flask (backend API)
+Web-based frontend (vanilla JS)
+
+Tools & Platforms
+
+Blender (synthetic scene generation)
+YOLO annotation format (bounding box labeling)
+GitHub (version control)
+Vercel (deployment)
+
+Core Concepts
+
+Synthetic data generation
+Computer vision annotation pipelines
+Procedural scene randomization
+Privacy-preserving AI
+
 ## 🎯 Alignment with Kinetic Vision Challenge
 
 This project directly satisfies the challenge requirements:
